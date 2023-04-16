@@ -1,0 +1,205 @@
+@import 'partials/variables.scss';
+
+.media {
+    height: 60px;
+    display: flex;
+    background-color: $red;
+    color: $white;
+
+    .head {
+        display: flex;
+        width: 15%;
+        background-color: $darkred;
+        justify-content: center;
+        padding-top: 20px;
+
+        i {
+            color: $white;
+            font-size: 23px;
+        }
+
+        h2 {
+            font-size: 23px;
+            padding-left: 10px;
+        }
+    }
+
+    .main {
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        padding-right: 80px;
+        padding-left: 80px;
+
+        .search {
+            display: flex;
+
+            h3 {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding: 20px 10px;
+                color: rgb(235, 231, 231);
+            }
+
+            i {
+                font-size: 22px;
+                padding: 20px 10px;
+            }
+        }
+
+        .john {
+            display: flex;
+            h4{
+                padding: 20px 10px;
+            }
+
+            img {
+                height: 50px;
+                border-radius: 50%;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+.movie {
+    display: flex;
+
+    .menu {
+        width: 15%;
+        height: 900px;
+        background-color: $black;
+        color: $white;
+        padding-top: 50px;
+
+        ul {
+            padding-bottom: 20px;
+
+            li {
+                padding: 10px 40px;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            &:hover li {
+                color: $red;
+            }
+        }
+
+        .last {
+            display: flex;
+            padding: 10px 22px;
+
+            h4 {
+                font-size: 20px;
+                padding-top: 15px;
+            }
+
+            i {
+                font-size: 23px;
+                color: $red;
+                padding-top: 15px;
+            }
+        }
+
+        .d-flex {
+            display: flex;
+            padding: 15px 23px;
+
+            img {
+                border-radius: 50%;
+                height: 40px;
+            }
+
+            h5 {
+                font-size: 13px;
+                color: $red;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            span {
+                font-size: 10px;
+                color: $grey;
+            }
+
+            h6 {
+                font-size: 11px;
+                color: $red;
+            }
+        }
+
+    }
+
+    .new {
+        height: 900px;
+        width: 85%;
+        background-color: rgb(59, 55, 55);
+        color: $white;
+        font-family: sans-serif;
+
+        .releage {
+            height: 120px;
+            padding: 50px 80px;
+
+            h1 {
+                font-size: 35px;
+                color: $white;
+            }
+        }
+
+        .cinema {
+            margin-left: 120px;
+
+            h3 {
+                padding-top: 20px;
+            }
+
+            span {
+                color: $grey;
+            }
+            .bal{
+                position: relative;
+                height: 25px;
+                width: 60px;
+                border: 1px solid orange;
+                border-radius: 20px;
+                background-color: $yellow;
+                text-align: center;
+                top: 13px;
+                left: 50px;
+                p{
+                    padding-top: 4px;
+                }
+            }
+            &:hover .bal {
+                background-color: $red;
+            }
+
+            .image {
+                background-position: center;
+                height: 220px;
+                width: 160px;
+                background-size: 100%;
+                cursor: pointer;
+
+                i {
+                    font-size: 60px;
+                    color: $white;
+                    opacity: 0;
+                    transition: .5s;
+                    height: 220px;
+                    width: 160px;
+                    padding: 70px 50px;
+                }
+
+                &:hover i {
+                    color: $white;
+                    opacity: 0.6;
+                    background-color: $red;
+                }
+            }
+        }
+    }
+}
